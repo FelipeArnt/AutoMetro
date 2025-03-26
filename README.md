@@ -1,4 +1,4 @@
-# 🔌 AutoMetro.
+# 🔌 AutoMetro
 
 # 📌 Descrição
  - O AutoMetro é um script de automação em Python desenvolvido para auxiliar em ensaios de Metrologia Legal.
