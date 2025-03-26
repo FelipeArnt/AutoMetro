@@ -1,8 +1,8 @@
 # 🔌 AutoMetro
 
 # 📌 Descrição
- - O AutoMetro é um script de automação em Python desenvolvido para auxiliar em ensaios de Metrologia Legal.
- - Ele permite gravar, salvar e repetir ações do mouse e teclado, facilitando a execução de tarefas repetitivas em softwares de ensaio.
+ - O AutoMetro é um script de automação em Python para repetir processos repetitivos. 
+ - Ele permite gravar, salvar e repetir ações do mouse e teclado.
  - Pode ser utilizado para qualquer tipo de rotina repetitiva.
 
 # 🛠 Funcionalidades
