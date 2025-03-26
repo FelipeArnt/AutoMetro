@@ -1,4 +1,4 @@
-# AutoMetro - Ensaios funcionais de Metrologia Legal.
+# 🔌 AutoMetro.
 
 # 📌 Descrição
  - O AutoMetro é um script de automação em Python desenvolvido para auxiliar em ensaios de Metrologia Legal.
@@ -14,4 +14,4 @@
 # 🛑 Observações
  - Durante a gravação, certifique-se de que a janela do software de ensaio está em foco.
  - O script inclui delays (time.sleep) para garantir a execução correta das ações.
- - Use nomes descritivos para os arquivos JSON (ex: metersoft.json) para organizar diferentes rotinas.
+ - Use nomes descritivos para os arquivos JSON (ex: "".json) para organizar diferentes rotinas.
