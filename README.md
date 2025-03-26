@@ -1,28 +1,15 @@
-# AutoMetro - Desenvolvido para ensaios funcionais de Metrologia Legal.
+# AutoMetro - Ensaios funcionais de Metrologia Legal.
 
-<br>
+# 📌 Descrição
+ - O AutoMetro é um script de automação em Python desenvolvido para auxiliar em ensaios de Metrologia Legal. Ele permite gravar, salvar e repetir ações do mouse e teclado, facilitando a execução de tarefas repetitivas em softwares de ensaio.
 
-# 01 - Propósito
-- Script de automação para ensaios de Metrologia Legal.
-- A ideia inicial é utilizar o script para tarefas repetitivas e cansativas, como geração de logs na memória de um dispositivo, buffer overflow e afins.
+# 🛠 Funcionalidades
+ - Gravação de Ações: Registra cliques do mouse, pressionamentos de teclas e digitação de texto.
+ - Salvamento em JSON: Armazena as ações em um arquivo JSON para uso futuro.
+ - Repetição de Ações: Repete as ações gravadas um número definido de vezes.
+ - Menu Interativo: Interface simples para escolher entre gravar, carregar ou repetir ações.
 
-<br>
-
-# 02 - Tecnologias empregadas 
- - Foi utilizado a linguagem de programação python3 para o código do script, assim como as seguintes bibliotecas:  "pyautogui" para mapear e gravar as ações produzidas no software de ensaio. "Json" para enviar as ações em um arquivo ".json" para ser repetido n vezes. E "time" para aplicação do delay em segundos entre cada ação.
-
-<br>
-
- # 03 - Utilização do script
-
- - Pré-requisitos : biblioteca pyautogui.
- 
- - Para iniciar o script digite o comando "py .\AutoMetro.py", você terá que escrever o nome do arquivo ( nome do software utilizado + .json no final, exemplo: "Metersoft.json"). 
- 
- Após isso, será exibido um menu interativo com as seguintes opções:
-
- - `Opção 1:` Gravar ações. 
- - `Opção 2:` Carregar ações de um arquivo.  
- - `Opção 3:` Repetir ações.  
- - `Opção 4:` Sair.  
-
+# 🛑 Observações
+ - Durante a gravação, certifique-se de que a janela do software de ensaio está em foco.
+ - O script inclui delays (time.sleep) para garantir a execução correta das ações.
+ - Use nomes descritivos para os arquivos JSON (ex: metersoft.json) para organizar diferentes rotinas.
