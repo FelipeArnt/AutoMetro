@@ -1,4 +1,4 @@
-# AutoMetro - LABELO / VSW
+# AutoMetro - Desenvolvido para ensaios funcionais de Metrologia Legal.
 
 <br>
 
