@@ -1,4 +1,4 @@
-#AutoMetro - Script de Automação para ensaios de Metrologia Legal.
+#AutoMetro 
 
 import pyautogui # type: ignore
 import time
