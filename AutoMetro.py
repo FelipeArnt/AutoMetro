@@ -1,18 +1,12 @@
 #AutoMetro 
-
 import pyautogui # type: ignore
 import time
-import sys
 import json
-import subprocess
 
 # Utilizando "with" para fechar automaticamente os "Open" utilizados nas defs.
 # Talvez implementar uma padronização para substituir o "actions.json". Salvando as rotinas de acordo com o nome do software utilizado no ensaio.
 # json para manipular arquivos .json (Onde as ações serão armazenadas!).
 # time para colocar delay entra os blocos de código e ações. (usei pelo fato de ter uma tela só e precisar colocar em tela cheia o software de ensaio) 
-# sys serve para acessar argumentos na linha de comando sys.argv e encerrar o script com sys.exit(1). 
-
-
 
 def rec():
     print("Você tem 5 segundos para ir a tela do software de ensaio.")
