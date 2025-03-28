@@ -2,8 +2,7 @@
 
 # 📌 Descrição
  - O AutoMetro é um script de automação em Python para executar processos repetitivos. 
- - Ele permite gravar, salvar e repetir ações do mouse e teclado.
- - Pode ser utilizado para qualquer tipo de rotina repetitiva.
+ - Ele permite gravar, salvar e repetir ações do mouse e teclado. Pode ser utilizado para qualquer tipo de rotina repetitiva.
 
 # 🛠 Funcionalidades
  - Gravação de Ações: Registra cliques do mouse, pressionamentos de teclas e digitação de texto.
