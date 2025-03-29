@@ -14,3 +14,7 @@
  - Durante a gravação, certifique-se de que a janela do software de ensaio está em foco.
  - O script inclui delays (time.sleep) para garantir a execução correta das ações.
  - Use nomes descritivos para os arquivos JSON (ex: "".json) para organizar diferentes rotinas.
+
+<!--
+# 🖥️🖱️ Demonstação
+![pip](https://github.com/user-attachments/assets/97ccd9a4-15ad-45a0-b0bd-59a1771c42de)
