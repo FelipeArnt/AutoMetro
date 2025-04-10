@@ -2,11 +2,49 @@
 import pyautogui # type: ignore
 import time
 import json
+import os
 
-# Utilizando "with" para fechar automaticamente os "Open" utilizados nas defs.
-# Talvez implementar uma padronização para substituir o "actions.json". Salvando as rotinas de acordo com o nome do software utilizado no ensaio.
-# json para manipular arquivos .json (Onde as ações serão armazenadas!).
-# time para colocar delay entra os blocos de código e ações. (usei pelo fato de ter uma tela só e precisar colocar em tela cheia o software de ensaio) 
+class AutoMetro: # Implementando a classe Autômetro para lidar melhor com o código.
+    def __init__(self):
+        self.actions = None  # Variável que armazena as ações do usuário
+        self.state_machine = {
+            '1': self.gravar_acoes,
+            '2': self.carregar_acoes,
+            '3': self.repetir_acoes,
+            '4': self.sair
+        }
+
+    def gravar_acoes(self):
+        self.actions = rec()
+        save(self.actions)
+
+    def carregar_acoes(self):
+        filename = input("\nArquivo JSON (Enter para 'actions.json'): ").strip() or 'actions.json'
+        self.actions = load(filename)
+
+    def repetir_acoes(self):
+        if self.actions:
+            try:
+                n = int(input("Quantas repetições? "))
+                rep(self.actions, n)
+            except ValueError:
+                print("Digite um número válido!")
+        else:
+            print("Nenhuma ação carregada! Use opção 1 ou 2 primeiro.")
+
+    def sair(self):
+        print("Saindo...")
+        exit()
+
+    def run(self):
+        while True:
+            opt = menu_interativo()
+            rodar = self.state_machine.get(opt, lambda: print("Opção inválida!"))
+            rodar()
+
+
+
+
 
 def rec():
     print("Você tem 5 segundos para ir a tela do software de ensaio.")
@@ -93,38 +131,8 @@ def menu_interativo():
     return opt
  
 def main():
-    actions = None
-    while True:
-        opt = menu_interativo()
- 
-        if opt == '1':  # Grava as ações realizadas no software de ensaio.
-            actions = rec()
-            save(actions)
- 
-        elif opt == '2':  # Carrega as ações do arquivo .json
-            filename = input("Digite o nome do arquivo (ou pressione Enter para usar 'actions.json'): ").strip()
-            if not filename: 
-                filename = 'actions.json'
-            actions = load(filename)
- 
-        elif opt == '3':  # Repete as ações e pede o número de repetições.
-            if actions:
-                try:
-                    n = int(input("Quantas vezes deseja repetir as ações? "))
-                    time.sleep(2)
-                    rep(actions, n)
-                except ValueError:
-                    print("Entrada inválida. Digite um número.")
-            else:
-                print("Nenhuma ação carregada. Por favor, grave ou carregue ações primeiro.")
- 
-        elif opt == '4':  # Finaliza o script.
-            print("Saindo...")
-            break
- 
-        else:
-            print("Opção inválida. Tente novamente.")
- 
+   autoMetro = AutoMetro()
+   autoMetro.run() 
 if __name__ == "__main__":
     main()
  
